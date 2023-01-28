@@ -1,0 +1,45 @@
+.swiper-pagination-bullet {
+  height: 7px;
+  width: 26px;
+  border-radius: 25px;
+  background: #06b6d4;
+}
+
+.blink {
+  animation: blink 1.5s linear infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.5;
+  }
+}
+
+#hashtag {
+  position: relative;
+  padding-bottom: 20px;
+  color: var(--accentColor);
+  font-size: 1rem;
+  display: block;
+  font-family: var(--font);
+  width: 100%;
+  text-align: center;
+
+  /*  animation   */
+  overflow: hidden;
+  background: linear-gradient(
+    90deg,
+    var(--bgColor),
+    var(--accentColor),
+    var(--bgColor)
+  );
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear var(--delay) infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  width: auto;
+}
